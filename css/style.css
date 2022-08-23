@@ -2,20 +2,5 @@
     font-size: 16px;
 }
 
-.container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 8fr 2fr;
-    grid-template-areas: 
-    "header"
-    "sd"
-    "main"
-    "ft"
-}
 
-.header-container{
-    grid-area: header;
-    height: 100px;
-
-}
 
