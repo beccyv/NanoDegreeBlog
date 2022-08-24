@@ -1,15 +1,28 @@
-.container{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr 8fr 2fr;
-    grid-template-areas: 
+@import "colors.css";
+@import "sizing.css";
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 8fr 2fr;
+  grid-template-areas:
     "header"
     "sd"
     "main"
-    "ft"
+    "ft";
+  margin: 0;
 }
 
-.header-container{
-    grid-area: header;
-    height: 100px;
+.header-container {
+  grid-area: header;
+  height: 100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-container {
+  background-color: var(--main-background-two);
+  margin: 5px 0;
+  padding: var(--large-padding);
 }
