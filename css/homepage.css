@@ -4,9 +4,10 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr 8fr 2fr;
+  grid-template-rows: 2fr 1fr 1fr 8fr 2fr;
   grid-template-areas:
     "header"
+    "nav"
     "sd"
     "main"
     "ft";
@@ -15,20 +16,42 @@
 
 .header-container {
   grid-area: header;
-  height: 100px;
   width: 100vw;
+  height: fit-content;
   display: flex;
   justify-content: center;
+  padding: 0;
 }
 
 .nav-container {
+  grid-area: nav;
   background-color: var(--main-background-two);
-  margin: 5px 0;
   padding: var(--large-padding);
-  display: flex;
-  justify-content: center;
+}
+
+.nav-item {
+  text-decoration: none;
+  display: block;
+  margin: auto;
+  text-align: center;
+  color: black;
+  text-transform: uppercase;
+}
+
+.nav-item:active {
+  font-weight: bold;
 }
 
 .nav-item:hover {
   text-decoration: underline;
+  display: block;
+}
+
+@media only screen and (min-width: 798px) {
+  .nav-list {
+    display: flex;
+    width: 60vw;
+    justify-content: center;
+    margin: auto;
+  }
 }
