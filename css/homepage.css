@@ -25,4 +25,10 @@
   background-color: var(--main-background-two);
   margin: 5px 0;
   padding: var(--large-padding);
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item:hover {
+  text-decoration: underline;
 }
