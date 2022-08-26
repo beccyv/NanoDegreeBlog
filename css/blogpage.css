@@ -1,0 +1,17 @@
+.post-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr 1fr 1fr 8fr 2fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "ft";
+  margin: 0;
+}
+
+.post-top {
+  background-image: url("../Images/cruising.png");
+  height: 1000px;
+  width: 100%;
+}
