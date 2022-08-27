@@ -13,8 +13,14 @@
 }
 
 content {
+  grid-area: main;
   display: flex;
   justify-content: center;
+}
+
+figcaption {
+  text-align: center;
+  font-weight: bold;
 }
 
 .post-top {
@@ -55,6 +61,7 @@ content {
 
 .text-section h2 {
   text-align: center;
+  margin-top: 30px;
 }
 
 .first-para::first-letter {
