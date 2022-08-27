@@ -18,7 +18,8 @@ content {
 }
 
 .post-top {
-  background-image: url("../Images/cruising.png");
+  background-image: url("../Images/cruise-ship-night.jpeg");
+  background-position: cover;
   display: flex;
   justify-content: center;
   min-height: 40vh;
@@ -33,10 +34,29 @@ content {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--main-dark-red);
+  color: var(--main-background-one);
+  text-shadow: 0 0 2px #000;
 }
 
 .title-block h1 {
   letter-spacing: 0.2em;
   font-size: 2.5em;
+}
+
+.text-section {
+  width: 80vw;
+  margin: auto;
+  line-height: 1.5;
+}
+
+.text-section img {
+  width: 80vw;
+}
+
+.text-section h2 {
+  text-align: center;
+}
+
+.first-para::first-letter {
+  font-size: 1.5em;
 }

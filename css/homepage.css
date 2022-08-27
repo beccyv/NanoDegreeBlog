@@ -50,6 +50,10 @@ header {
   display: block;
 }
 
+.nav-container ul {
+  padding-inline-start: 0;
+}
+
 .nav-list li {
   list-style: none;
 }
