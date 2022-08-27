@@ -4,7 +4,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr 1fr 8fr 2fr;
+  grid-template-rows: auto auto auto auto auto;
   grid-template-areas:
     "header"
     "nav"
@@ -14,10 +14,13 @@
   margin: 0;
 }
 
+header {
+  max-height: 150px;
+}
+
 .header-container {
   grid-area: header;
   width: 100vw;
-  height: fit-content;
   display: flex;
   justify-content: center;
   padding: 0;
@@ -47,11 +50,19 @@
   display: block;
 }
 
+.nav-list li {
+  list-style: none;
+}
+
 @media only screen and (min-width: 798px) {
   .nav-list {
     display: flex;
     width: 60vw;
     justify-content: center;
     margin: auto;
+  }
+
+  .nav-list li {
+    margin: 0 10px;
   }
 }

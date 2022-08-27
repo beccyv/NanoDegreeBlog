@@ -1,7 +1,9 @@
+@import "colors.css";
+
 .post-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr 1fr 8fr 2fr;
+  grid-template-rows: auto;
   grid-template-areas:
     "header"
     "nav"
@@ -10,8 +12,31 @@
   margin: 0;
 }
 
+content {
+  display: flex;
+  justify-content: center;
+}
+
 .post-top {
   background-image: url("../Images/cruising.png");
-  height: 1000px;
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  min-height: 40vh;
+  width: 100vw;
+}
+
+.title-block {
+  min-height: 30vh;
+  margin: 30px;
+  width: 40vw;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-dark-red);
+}
+
+.title-block h1 {
+  letter-spacing: 0.2em;
+  font-size: 2.5em;
 }
