@@ -1,0 +1,5 @@
+.message {
+  color: var(--main-dark-grey);
+  text-align: center;
+  height: 40vh;
+}

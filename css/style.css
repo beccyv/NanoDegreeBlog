@@ -3,6 +3,7 @@
 @import "blogpage.css";
 @import "contact.css";
 @import "about.css";
+@import "message.css";
 
 * {
   font-size: 16px;
