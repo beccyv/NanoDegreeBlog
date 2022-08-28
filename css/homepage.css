@@ -1,6 +1,7 @@
 @import "colors.css";
 @import "sizing.css";
 
+/* container for all of content */
 .container {
   display: grid;
   grid-template-columns: 1fr;
@@ -13,6 +14,7 @@
   margin: 0;
 }
 
+/* Header section  */
 header {
   max-height: 150px;
 }
@@ -25,6 +27,7 @@ header {
   padding: 0;
 }
 
+/* Nav Section  */
 .nav-container {
   grid-area: nav;
   background-color: var(--main-background-two);
@@ -57,6 +60,7 @@ header {
   list-style: none;
 }
 
+/* Main Content */
 .content {
   grid-area: main;
   display: flex;
@@ -65,61 +69,56 @@ header {
 }
 
 .card {
-  width: 80%;
-  background-color: var(--main-background-two);
-  border-radius: 4px;
-  min-height: 200px;
-  margin: 30px 0;
-  padding: 10px;
-}
-
-.inner-card {
-  margin: 10px;
-  border-radius: 4px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 2fr 1fr;
+  grid-template-areas:
+    "left"
+    "right-top"
+    "right-bottom";
+  min-height: 500px;
 }
 
 .left-card {
-  background-image: url("../images/cruise\ ship\ small.png");
+  grid-area: left;
+  background-image: url("../Images/cruise-ship-small.png");
   background-size: cover;
-  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.right-card {
-  background-color: var(--main-background-one);
-  height: 200px;
-}
-
-.card-image {
-  width: 100%;
-  object-fit: cover;
-}
-
-.title-box {
-  background-color: rgba(255, 255, 255, 0.3);
-  border: 4px double var(--main-background-one);
-  padding: 8px;
-  border-radius: 4px;
+.card-title {
+  background-color: rgba(255, 255, 255, 0.4);
   color: var(--main-background-one);
   text-shadow: 0 0 2px #000;
-}
-
-.title-box:hover {
-  background-color: rgba(255, 255, 255, 0.5);
-  cursor: pointer;
-  color: var(--main-dark-grey);
-  text-shadow: none;
-}
-
-/* .card-title {
-  color: var(--main-background-one);
+  padding: 20px;
+  border: 4px double var(--main-background-one);
 }
 
 .card-title:hover {
-  color: var(--main-text-color);
-} */
+  background-color: rgba(255, 255, 255, 0.6);
+  color: var(--main-dark-grey);
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.right-card {
+  padding: 40px;
+  background-color: var(--main-background-one);
+}
+
+.top-right {
+  grid-area: right-top;
+}
+
+@media screen and (min-width: 500px) and (max-width: 797px) {
+}
 
 @media only screen and (min-width: 798px) {
   .nav-list {
@@ -133,12 +132,18 @@ header {
     margin: 0 10px;
   }
 
-  .inner-card {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .single-card {
-    width: 50%;
+  .card {
+    width: 80%;
+    background-color: var(--main-background-two);
+    border-radius: 4px;
+    margin: 30px 0;
+    padding: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      "left right-top"
+      "left right-middle"
+      "left right-bottom";
+    min-height: 500px;
   }
 }
