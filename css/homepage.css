@@ -70,24 +70,56 @@ header {
   border-radius: 4px;
   min-height: 200px;
   margin: 30px 0;
-  display: flex;
-  justify-content: space-between;
   padding: 10px;
 }
 
 .inner-card {
-  margin: 10px 0 10px 10px;
-  border-top: 2px solid white;
-  border-bottom: 2px solid white;
-  width: 50%;
-  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
 }
 
 .left-card {
-  border-left: 2px solid white;
-  width: 50%;
-  padding: 10px;
+  background-image: url("../images/cruise\ ship\ small.png");
+  background-size: cover;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.right-card {
+  background-color: var(--main-background-one);
+  height: 200px;
+}
+
+.card-image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.title-box {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: 4px double var(--main-background-one);
+  padding: 8px;
+  border-radius: 4px;
+  color: var(--main-background-one);
+  text-shadow: 0 0 2px #000;
+}
+
+.title-box:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  color: var(--main-dark-grey);
+  text-shadow: none;
+}
+
+/* .card-title {
+  color: var(--main-background-one);
+}
+
+.card-title:hover {
+  color: var(--main-text-color);
+} */
 
 @media only screen and (min-width: 798px) {
   .nav-list {
@@ -99,5 +131,14 @@ header {
 
   .nav-list li {
     margin: 0 10px;
+  }
+
+  .inner-card {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .single-card {
+    width: 50%;
   }
 }
