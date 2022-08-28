@@ -68,6 +68,7 @@ header {
   width: 100%;
 }
 
+/* First Section */
 .card {
   width: 100%;
   display: grid;
@@ -133,6 +134,12 @@ header {
 
 .read-more:hover {
   background-color: var(--main-dark-red);
+}
+
+/* Second Section */
+.multi-cards {
+  background-color: var(--main-background-two);
+  min-height: 500px;
 }
 
 @media screen and (min-width: 500px) and (max-width: 797px) {
