@@ -1,17 +1,5 @@
 @import "colors.css";
 
-.post-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-areas:
-    "header"
-    "nav"
-    "main"
-    "ft";
-  margin: 0;
-}
-
 content {
   grid-area: main;
   display: flex;
