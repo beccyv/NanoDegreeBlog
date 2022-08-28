@@ -92,4 +92,16 @@ header {
 .footer {
   background-color: var(--main-dark-grey);
   height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 7fr 1fr;
+  grid-template-areas:
+    "ft-left ft-right"
+    "ft-btm ft-btm";
+}
+
+.ft-btm {
+  grid-area: ft-btm;
+  color: var(--main-background-one);
+  text-align: center;
 }
