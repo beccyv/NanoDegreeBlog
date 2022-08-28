@@ -140,6 +140,24 @@ header {
 .multi-cards {
   background-color: var(--main-background-two);
   min-height: 500px;
+  padding: 20px 5px;
+}
+
+.mini-card {
+  background-color: var(--main-background-one);
+  text-align: center;
+  width: 80%;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.mini-card-img {
+  width: 80%;
+  max-height: 300px;
+}
+
+.mini-card-btn {
+  margin: 20px auto;
 }
 
 @media screen and (min-width: 500px) and (max-width: 797px) {
@@ -174,5 +192,14 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+
+  .multi-cards {
+    display: flex;
+    justify-content: center;
+  }
+
+  .mini-card {
+    width: 40%;
   }
 }
