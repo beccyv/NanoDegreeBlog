@@ -98,10 +98,33 @@ header {
   grid-template-areas:
     "ft-left ft-right"
     "ft-btm ft-btm";
+  color: var(--main-background-one);
+}
+
+.ft-left {
+  margin: auto;
+  grid-area: ft-left;
+}
+
+.ft-right {
+  margin: auto;
+  grid-area: ft-right;
+}
+
+.ft-title {
+  font-size: 1.2em;
+}
+
+.ft-link {
+  color: var(--main-background-one);
+  text-decoration: none;
+}
+
+.ft-link:hover {
+  text-decoration: underline;
 }
 
 .ft-btm {
   grid-area: ft-btm;
-  color: var(--main-background-one);
   text-align: center;
 }

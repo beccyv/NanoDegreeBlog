@@ -11,18 +11,18 @@
 }
 
 .right-contact {
-  background-color: var(--main-dark-grey);
+  background-color: var(--main-background-two);
   width: 100%;
   padding: 40px;
 }
 
 .contact-form {
-  border: 2px solid white;
+  border: 2px solid var(--main-dark-grey);
   padding: 20px;
 }
 
 .form-label {
-  color: white;
+  color: var(--main-dark-grey);
 }
 
 .form-row {
@@ -67,6 +67,6 @@
   }
 
   .contact-form {
-    width: 40%;
+    width: 35%;
   }
 }

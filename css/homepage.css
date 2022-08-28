@@ -32,8 +32,7 @@
 
 .card-title {
   background-color: rgba(255, 255, 255, 0.4);
-  color: var(--main-background-one);
-  text-shadow: 0 0 2px #000;
+  color: var(--main-text-color);
   padding: 20px;
   border: 4px double var(--main-background-one);
 }
@@ -95,6 +94,7 @@
 .mini-card-img {
   width: 80%;
   max-height: 300px;
+  object-fit: cover;
 }
 
 .mini-card-btn {
@@ -142,5 +142,17 @@
 
   .mini-card {
     width: 40%;
+  }
+
+  .category {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .author-name {
+    font-size: 10px;
+    font-weight: 700;
   }
 }
