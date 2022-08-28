@@ -1,0 +1,72 @@
+@import "colors.css";
+
+.contact-container {
+  text-align: center;
+  display: block;
+}
+
+.left-contact {
+  padding: 40px;
+  color: var(--main-dark-grey);
+}
+
+.right-contact {
+  background-color: var(--main-dark-grey);
+  width: 100%;
+  padding: 40px;
+}
+
+.contact-form {
+  border: 2px solid white;
+  padding: 20px;
+}
+
+.form-label {
+  color: white;
+}
+
+.form-row {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.button-row {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 0;
+}
+
+.submit {
+  border: none;
+  background-color: var(--main-pale-red);
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.submit:hover {
+  background-color: var(--main-dark-red);
+}
+
+@media only screen and (min-width: 798px) {
+  /* .left-contact {
+    height: 100%;
+    width: 50%;
+  }*/
+
+  .right-contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .form-row {
+    width: 50%;
+  }
+
+  .contact-form {
+    width: 40%;
+  }
+}

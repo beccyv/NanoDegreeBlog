@@ -32,32 +32,37 @@
           </ul>
         </div>
       </nav>
-      <content class="content">
-        <section class="card">
-          <div class="left-card">
-            <a href="blog-post.html" class="card-link"
-              ><div class="card-title">
-                <h1>When Did Cruising Get So Cool?</h1>
-              </div>
-            </a>
-          </div>
-          <div class="top-right right-card">
-            <p>
-              Once the poor relation of the holiday world and loved only by
-              those of retirement age, cruising has undergone a massive image
-              transformation in recent years.
-            </p>
-            <p>
-              What is it that makes modern cruises so much more appealing to the
-              younger generation, and could they be right for you?
-            </p></div>
-            <div class="bottom-right right-card">
-              <a href="blog-post.html"><button class="read-more">Read More</button></a>
+      <content class="contact-container">
+        <section class="left-contact">
+          <h1>Let's keep in touch!</h1>
+          <h2>Fill in our contact form to be added to our mailing list</h2>
+          <h3>
+            Receive all our latest posts in your mailbox the day they are
+            published and receive exclusive offers and discounts.
+          </h3>
+        </section>
+        <section class="right-contact">
+          <form class="contact-form" action="message.html">
+            <div class="form-row">
+              <label class="form-label" for="fname">Name </label>
+              <input type="text" id="fname" name="fname" />
             </div>
-          </div>
+            <div class="form-row">
+              <label class="form-label" for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="form-row">
+              <label class="form-label" for="message">Message</label>
+              <input type="text" id="message" name="message" />
+            </div>
+            <div class="button-row">
+              <button type="submit" value="Submit" class="submit">
+                Submit
+              </button>
+            </div>
+          </form>
         </section>
       </content>
-      <footer>This is the footer</footer>
     </div>
   </body>
 </html>

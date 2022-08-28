@@ -77,7 +77,6 @@ header {
     "left"
     "right-top"
     "right-bottom";
-  min-height: 500px;
 }
 
 .left-card {
@@ -117,6 +116,25 @@ header {
   grid-area: right-top;
 }
 
+.bottom-right {
+  grid-area: right-bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.read-more {
+  border: none;
+  background-color: var(--main-pale-red);
+  padding: 8px;
+  border-radius: 4px;
+  color: white;
+}
+
+.read-more:hover {
+  background-color: var(--main-dark-red);
+}
+
 @media screen and (min-width: 500px) and (max-width: 797px) {
 }
 
@@ -139,11 +157,15 @@ header {
     margin: 30px 0;
     padding: 20px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr;
     grid-template-areas:
       "left right-top"
-      "left right-middle"
       "left right-bottom";
-    min-height: 500px;
+  }
+
+  .top-right {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 }
