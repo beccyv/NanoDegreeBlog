@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v14.0" nonce="vYanzm9E"></script>
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap"
       rel="stylesheet"
@@ -116,7 +118,17 @@
               There's nothing better than someone who knows the world of
               cruising and can help you book the trip of your dreams.
             </p>
-            <p><span class="linkedIn-share"><a href="https://www.linkedin.com/sharing/share-offsite/?url={blog-post.html}" class="share-button">Share On LinkedIn</a></span></p>
+            <div class="shares">
+              <span class="linkedIn-share"><a href="https://www.linkedin.com/sharing/share-offsite/?url={blog-post.html}" class="share-button">Share On LinkedIn</a></span>
+              <div class="fb-share-button" data-href="http://127.0.0.1:5500/blog-post.html" 
+              data-layout="button_count" data-size="small"><a target="_blank" 
+              href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A5500%2Fblog-post.html&amp;src=sdkpreparse" 
+              class="fb-xfbml-parse-ignore">Share</a></div>
+            </div>
+            <a class="twitter-share-button"
+                href="https://twitter.com/intent/tweet?text=Hello%20world"
+                data-size="large">
+                How cruising became cool again - http://127.0.0.1:5500/blog-post.html</a>
           </div>
           <aside class="author-box">
             <div class="author-bio">
