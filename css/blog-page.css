@@ -15,6 +15,7 @@ figcaption {
   font-weight: bold;
 }
 
+/* Author Box */
 .author-box {
   margin: 10px auto;
 }
@@ -39,6 +40,7 @@ figcaption {
   padding: 10px;
 }
 
+/* Top Section */
 .post-top {
   background-image: url("../Images/cruise-ship-night.jpeg");
   background-position: cover;
@@ -84,16 +86,18 @@ figcaption {
   font-size: 1.5em;
 }
 
+/* Sharing */
 .linkedIn-share {
-  background-color: #0b65c2;
-  padding: 4px;
   border-radius: 4px;
-  margin-right: 10px;
+  margin: 2px;
 }
 
 .share-button {
   color: var(--main-background-one);
   text-decoration: none;
+  background-color: #0b65c2;
+  padding: 4px;
+  border-radius: 4px;
 }
 
 .share-button:hover {
@@ -102,16 +106,29 @@ figcaption {
   filter: brightness(0.8);
 }
 
-.shares {
-  display: flex;
-  justify-content: space-between;
+.fb-share-button {
+  margin: 5px;
 }
 
-@media screen and (min-width: 798px) {
+.twitter-button {
+  margin: 5px;
+}
+
+@media screen and (min-width: 830px) {
   .author-box {
     display: flex;
     width: 80%;
     justify-content: flex-start;
+  }
+
+  .shares {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .linkedIn-share {
+    margin-right: 10px;
   }
 
   .author-bio {

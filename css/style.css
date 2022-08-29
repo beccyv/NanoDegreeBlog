@@ -1,6 +1,6 @@
 @import "homepage.css";
 @import "colors.css";
-@import "blogpage.css";
+@import "blog-page.css";
 @import "contact.css";
 @import "about.css";
 @import "message.css";
@@ -60,7 +60,7 @@ header {
 .nav-container {
   grid-area: nav;
   background-color: var(--main-background-two);
-  padding: var(--large-padding);
+  padding: 10px;
 }
 
 .nav-item {
@@ -105,11 +105,13 @@ header {
 .ft-left {
   margin: auto;
   grid-area: ft-left;
+  width: 80%;
 }
 
 .ft-right {
   margin: auto;
   grid-area: ft-right;
+  width: 80%;
 }
 
 .ft-title {
@@ -137,5 +139,11 @@ header {
     grid-template-areas:
       "ft-left ft-right"
       "ft-btm ft-btm";
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header-img {
+    max-width: 280px;
   }
 }
