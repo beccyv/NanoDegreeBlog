@@ -39,7 +39,7 @@ figcaption {
   height: 100px;
 }
 
-.author-left {
+.author-right {
   margin-left: 50px;
   padding: 10px;
 }
@@ -137,5 +137,21 @@ figcaption {
 
   .author-bio {
     width: 50%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .author-bio {
+    display: block;
+  }
+
+  .author-left {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .author-right {
+    margin-left: 0;
   }
 } ;
